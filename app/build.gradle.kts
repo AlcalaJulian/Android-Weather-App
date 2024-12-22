@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "es.usj.mastertsea.androidweatherapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "es.usj.mastertsea.androidweatherapp"
@@ -15,6 +15,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        viewBinding.enable = true
     }
 
     buildTypes {
@@ -36,7 +37,8 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.gson)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

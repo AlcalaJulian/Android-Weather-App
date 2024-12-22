@@ -1,0 +1,1108 @@
+{
+  "cities": [
+    {
+      "city": "Madrid",
+      "location": {
+        "latitude": 40.4168,
+        "longitude": -3.7038
+      },
+      "weather": [
+        {
+          "day": "2024-11-25",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 15,
+              "condition": "Sunny",
+              "humidity": 40,
+              "wind_speed": 10
+            },
+            {
+              "hour": "02:00",
+              "temperature": 15,
+              "condition": "Sunny",
+              "humidity": 41,
+              "wind_speed": 10
+            },
+            {
+              "hour": "04:00",
+              "temperature": 15,
+              "condition": "Sunny",
+              "humidity": 42,
+              "wind_speed": 10
+            },
+            {
+              "hour": "06:00",
+              "temperature": 15,
+              "condition": "Sunny",
+              "humidity": 43,
+              "wind_speed": 10
+            },
+            {
+              "hour": "08:00",
+              "temperature": 16,
+              "condition": "Sunny",
+              "humidity": 44,
+              "wind_speed": 10
+            },
+            {
+              "hour": "10:00",
+              "temperature": 16,
+              "condition": "Sunny",
+              "humidity": 45,
+              "wind_speed": 10
+            },
+            {
+              "hour": "12:00",
+              "temperature": 16,
+              "condition": "Sunny",
+              "humidity": 46,
+              "wind_speed": 10
+            },
+            {
+              "hour": "14:00",
+              "temperature": 16,
+              "condition": "Sunny",
+              "humidity": 47,
+              "wind_speed": 10
+            },
+            {
+              "hour": "16:00",
+              "temperature": 16,
+              "condition": "Sunny",
+              "humidity": 48,
+              "wind_speed": 10
+            },
+            {
+              "hour": "18:00",
+              "temperature": 16,
+              "condition": "Sunny",
+              "humidity": 49,
+              "wind_speed": 10
+            },
+            {
+              "hour": "20:00",
+              "temperature": 16,
+              "condition": "Sunny",
+              "humidity": 50,
+              "wind_speed": 10
+            },
+            {
+              "hour": "22:00",
+              "temperature": 15,
+              "condition": "Sunny",
+              "humidity": 51,
+              "wind_speed": 10
+            }
+          ]
+        },
+        {
+          "day": "2024-11-26",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 14,
+              "condition": "Partly Cloudy",
+              "humidity": 45,
+              "wind_speed": 12
+            },
+            {
+              "hour": "02:00",
+              "temperature": 14,
+              "condition": "Partly Cloudy",
+              "humidity": 46,
+              "wind_speed": 12
+            },
+            {
+              "hour": "04:00",
+              "temperature": 14,
+              "condition": "Partly Cloudy",
+              "humidity": 47,
+              "wind_speed": 12
+            },
+            {
+              "hour": "06:00",
+              "temperature": 14,
+              "condition": "Partly Cloudy",
+              "humidity": 48,
+              "wind_speed": 12
+            },
+            {
+              "hour": "08:00",
+              "temperature": 14,
+              "condition": "Partly Cloudy",
+              "humidity": 49,
+              "wind_speed": 12
+            },
+            {
+              "hour": "10:00",
+              "temperature": 14,
+              "condition": "Partly Cloudy",
+              "humidity": 50,
+              "wind_speed": 12
+            },
+            {
+              "hour": "12:00",
+              "temperature": 15,
+              "condition": "Partly Cloudy",
+              "humidity": 51,
+              "wind_speed": 12
+            },
+            {
+              "hour": "14:00",
+              "temperature": 15,
+              "condition": "Partly Cloudy",
+              "humidity": 52,
+              "wind_speed": 12
+            },
+            {
+              "hour": "16:00",
+              "temperature": 15,
+              "condition": "Partly Cloudy",
+              "humidity": 53,
+              "wind_speed": 12
+            },
+            {
+              "hour": "18:00",
+              "temperature": 15,
+              "condition": "Partly Cloudy",
+              "humidity": 54,
+              "wind_speed": 12
+            },
+            {
+              "hour": "20:00",
+              "temperature": 15,
+              "condition": "Partly Cloudy",
+              "humidity": 55,
+              "wind_speed": 12
+            },
+            {
+              "hour": "22:00",
+              "temperature": 14,
+              "condition": "Partly Cloudy",
+              "humidity": 56,
+              "wind_speed": 12
+            }
+          ]
+        },
+        {
+          "day": "2024-11-27",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 50,
+              "wind_speed": 8
+            },
+            {
+              "hour": "02:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 51,
+              "wind_speed": 8
+            },
+            {
+              "hour": "04:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 52,
+              "wind_speed": 8
+            },
+            {
+              "hour": "06:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 53,
+              "wind_speed": 8
+            },
+            {
+              "hour": "08:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 54,
+              "wind_speed": 8
+            },
+            {
+              "hour": "10:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 55,
+              "wind_speed": 8
+            },
+            {
+              "hour": "12:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 56,
+              "wind_speed": 8
+            },
+            {
+              "hour": "14:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 57,
+              "wind_speed": 8
+            },
+            {
+              "hour": "16:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 58,
+              "wind_speed": 8
+            },
+            {
+              "hour": "18:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 59,
+              "wind_speed": 8
+            },
+            {
+              "hour": "20:00",
+              "temperature": 16,
+              "condition": "Cloudy",
+              "humidity": 60,
+              "wind_speed": 8
+            },
+            {
+              "hour": "22:00",
+              "temperature": 15,
+              "condition": "Cloudy",
+              "humidity": 61,
+              "wind_speed": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "location": {
+        "latitude": 41.3784,
+        "longitude": 2.1928
+      },
+      "weather": [
+        {
+          "day": "2024-11-25",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 55,
+              "wind_speed": 5
+            },
+            {
+              "hour": "02:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 54,
+              "wind_speed": 5
+            },
+            {
+              "hour": "04:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 53,
+              "wind_speed": 5
+            },
+            {
+              "hour": "06:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 52,
+              "wind_speed": 5
+            },
+            {
+              "hour": "08:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 51,
+              "wind_speed": 5
+            },
+            {
+              "hour": "10:00",
+              "temperature": 20,
+              "condition": "Sunny",
+              "humidity": 50,
+              "wind_speed": 5
+            },
+            {
+              "hour": "12:00",
+              "temperature": 20,
+              "condition": "Sunny",
+              "humidity": 49,
+              "wind_speed": 5
+            },
+            {
+              "hour": "14:00",
+              "temperature": 20,
+              "condition": "Sunny",
+              "humidity": 48,
+              "wind_speed": 5
+            },
+            {
+              "hour": "16:00",
+              "temperature": 20,
+              "condition": "Sunny",
+              "humidity": 47,
+              "wind_speed": 5
+            },
+            {
+              "hour": "18:00",
+              "temperature": 20,
+              "condition": "Sunny",
+              "humidity": 46,
+              "wind_speed": 5
+            },
+            {
+              "hour": "20:00",
+              "temperature": 20,
+              "condition": "Sunny",
+              "humidity": 45,
+              "wind_speed": 5
+            },
+            {
+              "hour": "22:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 44,
+              "wind_speed": 5
+            }
+          ]
+        },
+        {
+          "day": "2024-11-26",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 50,
+              "wind_speed": 6
+            },
+            {
+              "hour": "02:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 49,
+              "wind_speed": 6
+            },
+            {
+              "hour": "04:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 48,
+              "wind_speed": 6
+            },
+            {
+              "hour": "06:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 47,
+              "wind_speed": 6
+            },
+            {
+              "hour": "08:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 46,
+              "wind_speed": 6
+            },
+            {
+              "hour": "10:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 45,
+              "wind_speed": 6
+            },
+            {
+              "hour": "12:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 44,
+              "wind_speed": 6
+            },
+            {
+              "hour": "14:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 43,
+              "wind_speed": 6
+            },
+            {
+              "hour": "16:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 42,
+              "wind_speed": 6
+            },
+            {
+              "hour": "18:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 41,
+              "wind_speed": 6
+            },
+            {
+              "hour": "20:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 40,
+              "wind_speed": 6
+            },
+            {
+              "hour": "22:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 39,
+              "wind_speed": 6
+            }
+          ]
+        },
+        {
+          "day": "2024-11-27",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 40,
+              "wind_speed": 4
+            },
+            {
+              "hour": "02:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 41,
+              "wind_speed": 4
+            },
+            {
+              "hour": "04:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 42,
+              "wind_speed": 4
+            },
+            {
+              "hour": "06:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 43,
+              "wind_speed": 4
+            },
+            {
+              "hour": "08:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 44,
+              "wind_speed": 4
+            },
+            {
+              "hour": "10:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 45,
+              "wind_speed": 4
+            },
+            {
+              "hour": "12:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 46,
+              "wind_speed": 4
+            },
+            {
+              "hour": "14:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 47,
+              "wind_speed": 4
+            },
+            {
+              "hour": "16:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 48,
+              "wind_speed": 4
+            },
+            {
+              "hour": "18:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 49,
+              "wind_speed": 4
+            },
+            {
+              "hour": "20:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 50,
+              "wind_speed": 4
+            },
+            {
+              "hour": "22:00",
+              "temperature": 21,
+              "condition": "Sunny",
+              "humidity": 51,
+              "wind_speed": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Seville",
+      "location": {
+        "latitude": 37.3886,
+        "longitude": -5.9823
+      },
+      "weather": [
+        {
+          "day": "2024-11-25",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 22,
+              "condition": "Sunny",
+              "humidity": 50,
+              "wind_speed": 12
+            },
+            {
+              "hour": "02:00",
+              "temperature": 22,
+              "condition": "Sunny",
+              "humidity": 51,
+              "wind_speed": 12
+            },
+            {
+              "hour": "04:00",
+              "temperature": 22,
+              "condition": "Sunny",
+              "humidity": 52,
+              "wind_speed": 12
+            },
+            {
+              "hour": "06:00",
+              "temperature": 22,
+              "condition": "Sunny",
+              "humidity": 53,
+              "wind_speed": 12
+            },
+            {
+              "hour": "08:00",
+              "temperature": 23,
+              "condition": "Sunny",
+              "humidity": 54,
+              "wind_speed": 12
+            },
+            {
+              "hour": "10:00",
+              "temperature": 23,
+              "condition": "Sunny",
+              "humidity": 55,
+              "wind_speed": 12
+            },
+            {
+              "hour": "12:00",
+              "temperature": 23,
+              "condition": "Sunny",
+              "humidity": 56,
+              "wind_speed": 12
+            },
+            {
+              "hour": "14:00",
+              "temperature": 23,
+              "condition": "Sunny",
+              "humidity": 57,
+              "wind_speed": 12
+            },
+            {
+              "hour": "16:00",
+              "temperature": 23,
+              "condition": "Sunny",
+              "humidity": 58,
+              "wind_speed": 12
+            },
+            {
+              "hour": "18:00",
+              "temperature": 23,
+              "condition": "Sunny",
+              "humidity": 59,
+              "wind_speed": 12
+            },
+            {
+              "hour": "20:00",
+              "temperature": 22,
+              "condition": "Sunny",
+              "humidity": 60,
+              "wind_speed": 12
+            },
+            {
+              "hour": "22:00",
+              "temperature": 22,
+              "condition": "Sunny",
+              "humidity": 61,
+              "wind_speed": 12
+            }
+          ]
+        },
+        {
+          "day": "2024-11-26",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 23,
+              "condition": "Partly Cloudy",
+              "humidity": 45,
+              "wind_speed": 10
+            },
+            {
+              "hour": "02:00",
+              "temperature": 23,
+              "condition": "Partly Cloudy",
+              "humidity": 46,
+              "wind_speed": 10
+            },
+            {
+              "hour": "04:00",
+              "temperature": 23,
+              "condition": "Partly Cloudy",
+              "humidity": 47,
+              "wind_speed": 10
+            },
+            {
+              "hour": "06:00",
+              "temperature": 23,
+              "condition": "Partly Cloudy",
+              "humidity": 48,
+              "wind_speed": 10
+            },
+            {
+              "hour": "08:00",
+              "temperature": 24,
+              "condition": "Partly Cloudy",
+              "humidity": 49,
+              "wind_speed": 10
+            },
+            {
+              "hour": "10:00",
+              "temperature": 24,
+              "condition": "Partly Cloudy",
+              "humidity": 50,
+              "wind_speed": 10
+            },
+            {
+              "hour": "12:00",
+              "temperature": 24,
+              "condition": "Partly Cloudy",
+              "humidity": 51,
+              "wind_speed": 10
+            },
+            {
+              "hour": "14:00",
+              "temperature": 24,
+              "condition": "Partly Cloudy",
+              "humidity": 52,
+              "wind_speed": 10
+            },
+            {
+              "hour": "16:00",
+              "temperature": 24,
+              "condition": "Partly Cloudy",
+              "humidity": 53,
+              "wind_speed": 10
+            },
+            {
+              "hour": "18:00",
+              "temperature": 24,
+              "condition": "Partly Cloudy",
+              "humidity": 54,
+              "wind_speed": 10
+            },
+            {
+              "hour": "20:00",
+              "temperature": 23,
+              "condition": "Rainy",
+              "humidity": 55,
+              "wind_speed": 10
+            },
+            {
+              "hour": "22:00",
+              "temperature": 23,
+              "condition": "Storm",
+              "humidity": 56,
+              "wind_speed": 10
+            }
+          ]
+        },
+        {
+          "day": "2024-11-27",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 24,
+              "condition": "Sunny",
+              "humidity": 40,
+              "wind_speed": 9
+            },
+            {
+              "hour": "02:00",
+              "temperature": 24,
+              "condition": "Sunny",
+              "humidity": 41,
+              "wind_speed": 9
+            },
+            {
+              "hour": "04:00",
+              "temperature": 24,
+              "condition": "Sunny",
+              "humidity": 42,
+              "wind_speed": 9
+            },
+            {
+              "hour": "06:00",
+              "temperature": 24,
+              "condition": "Sunny",
+              "humidity": 43,
+              "wind_speed": 9
+            },
+            {
+              "hour": "08:00",
+              "temperature": 25,
+              "condition": "Sunny",
+              "humidity": 44,
+              "wind_speed": 9
+            },
+            {
+              "hour": "10:00",
+              "temperature": 25,
+              "condition": "Sunny",
+              "humidity": 45,
+              "wind_speed": 9
+            },
+            {
+              "hour": "12:00",
+              "temperature": 25,
+              "condition": "Sunny",
+              "humidity": 46,
+              "wind_speed": 9
+            },
+            {
+              "hour": "14:00",
+              "temperature": 25,
+              "condition": "Sunny",
+              "humidity": 47,
+              "wind_speed": 9
+            },
+            {
+              "hour": "16:00",
+              "temperature": 25,
+              "condition": "Sunny",
+              "humidity": 48,
+              "wind_speed": 9
+            },
+            {
+              "hour": "18:00",
+              "temperature": 25,
+              "condition": "Sunny",
+              "humidity": 49,
+              "wind_speed": 9
+            },
+            {
+              "hour": "20:00",
+              "temperature": 24,
+              "condition": "Sunny",
+              "humidity": 50,
+              "wind_speed": 9
+            },
+            {
+              "hour": "22:00",
+              "temperature": 24,
+              "condition": "Sunny",
+              "humidity": 51,
+              "wind_speed": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Valencia",
+      "location": {
+        "latitude": 39.4699,
+        "longitude": -0.3763
+      },
+      "weather": [
+        {
+          "day": "2024-11-25",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 18,
+              "condition": "Sunny",
+              "humidity": 60,
+              "wind_speed": 7
+            },
+            {
+              "hour": "02:00",
+              "temperature": 18,
+              "condition": "Sunny",
+              "humidity": 61,
+              "wind_speed": 7
+            },
+            {
+              "hour": "04:00",
+              "temperature": 18,
+              "condition": "Sunny",
+              "humidity": 62,
+              "wind_speed": 7
+            },
+            {
+              "hour": "06:00",
+              "temperature": 18,
+              "condition": "Sunny",
+              "humidity": 63,
+              "wind_speed": 7
+            },
+            {
+              "hour": "08:00",
+              "temperature": 19,
+              "condition": "Sunny",
+              "humidity": 64,
+              "wind_speed": 7
+            },
+            {
+              "hour": "10:00",
+              "temperature": 19,
+              "condition": "Sunny",
+              "humidity": 65,
+              "wind_speed": 7
+            },
+            {
+              "hour": "12:00",
+              "temperature": 19,
+              "condition": "Sunny",
+              "humidity": 66,
+              "wind_speed": 7
+            },
+            {
+              "hour": "14:00",
+              "temperature": 19,
+              "condition": "Sunny",
+              "humidity": 67,
+              "wind_speed": 7
+            },
+            {
+              "hour": "16:00",
+              "temperature": 19,
+              "condition": "Sunny",
+              "humidity": 68,
+              "wind_speed": 7
+            },
+            {
+              "hour": "18:00",
+              "temperature": 19,
+              "condition": "Sunny",
+              "humidity": 69,
+              "wind_speed": 7
+            },
+            {
+              "hour": "20:00",
+              "temperature": 18,
+              "condition": "Sunny",
+              "humidity": 70,
+              "wind_speed": 7
+            },
+            {
+              "hour": "22:00",
+              "temperature": 18,
+              "condition": "Sunny",
+              "humidity": 71,
+              "wind_speed": 7
+            }
+          ]
+        },
+        {
+          "day": "2024-11-26",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 55,
+              "wind_speed": 8
+            },
+            {
+              "hour": "02:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 56,
+              "wind_speed": 8
+            },
+            {
+              "hour": "04:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 57,
+              "wind_speed": 8
+            },
+            {
+              "hour": "06:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 58,
+              "wind_speed": 8
+            },
+            {
+              "hour": "08:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 59,
+              "wind_speed": 8
+            },
+            {
+              "hour": "10:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 60,
+              "wind_speed": 8
+            },
+            {
+              "hour": "12:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 61,
+              "wind_speed": 8
+            },
+            {
+              "hour": "14:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 62,
+              "wind_speed": 8
+            },
+            {
+              "hour": "16:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 63,
+              "wind_speed": 8
+            },
+            {
+              "hour": "18:00",
+              "temperature": 20,
+              "condition": "Clear",
+              "humidity": 64,
+              "wind_speed": 8
+            },
+            {
+              "hour": "20:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 65,
+              "wind_speed": 8
+            },
+            {
+              "hour": "22:00",
+              "temperature": 19,
+              "condition": "Clear",
+              "humidity": 66,
+              "wind_speed": 8
+            }
+          ]
+        },
+        {
+          "day": "2024-11-27",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 50,
+              "wind_speed": 5
+            },
+            {
+              "hour": "02:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 51,
+              "wind_speed": 5
+            },
+            {
+              "hour": "04:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 52,
+              "wind_speed": 5
+            },
+            {
+              "hour": "06:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 53,
+              "wind_speed": 5
+            },
+            {
+              "hour": "08:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 54,
+              "wind_speed": 5
+            },
+            {
+              "hour": "10:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 55,
+              "wind_speed": 5
+            },
+            {
+              "hour": "12:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 56,
+              "wind_speed": 5
+            },
+            {
+              "hour": "14:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 57,
+              "wind_speed": 5
+            },
+            {
+              "hour": "16:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 58,
+              "wind_speed": 5
+            },
+            {
+              "hour": "18:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 59,
+              "wind_speed": 5
+            },
+            {
+              "hour": "20:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 60,
+              "wind_speed": 5
+            },
+            {
+              "hour": "22:00",
+              "temperature": 20,
+              "condition": "Partly Cloudy",
+              "humidity": 61,
+              "wind_speed": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
