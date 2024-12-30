@@ -21,10 +21,6 @@ class WeatherViewModel: ViewModel() {
         _selectedCityWeather.value = weatherInfoList.value?.first { it -> it.city == id }
     }
 
-    fun getImg(){
-        //selectedWeather.weather.first().
-    }
-
     fun loadData(context: Fragment){
         try {
             val jsonString = readJsonFromRaw(context, R.raw.forecast_scheme)

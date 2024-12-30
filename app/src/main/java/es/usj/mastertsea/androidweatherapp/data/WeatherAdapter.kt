@@ -5,7 +5,6 @@
     import androidx.recyclerview.widget.DiffUtil
     import androidx.recyclerview.widget.ListAdapter
     import androidx.recyclerview.widget.RecyclerView
-    import es.usj.mastertsea.androidweatherapp.R
     import es.usj.mastertsea.androidweatherapp.databinding.WeatherItemBinding
     import es.usj.mastertsea.androidweatherapp.domain.model.City
 
@@ -13,7 +12,7 @@
         ListAdapter<City, WeatherAdapter.WeatherViewHolder>(CityDiffCallback()) {
 
             override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WeatherViewHolder {
-                var binding = WeatherItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+                val binding: WeatherItemBinding = WeatherItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
                 return WeatherViewHolder(binding)
             }
 

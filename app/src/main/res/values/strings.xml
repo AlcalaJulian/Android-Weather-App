@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">AndroidWeatherApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="img_weather_desc">img weather</string>
     <string name="default_temperature">0</string>

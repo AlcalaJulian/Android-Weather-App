@@ -12,16 +12,6 @@ import es.usj.mastertsea.androidweatherapp.data.WeatherAdapter
 import es.usj.mastertsea.androidweatherapp.data.WeatherViewModel
 import es.usj.mastertsea.androidweatherapp.domain.model.City
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [WeatherListFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class WeatherListFragment : Fragment() {
 
     private val viewModel: WeatherViewModel by activityViewModels()

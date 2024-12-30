@@ -18,7 +18,6 @@ import es.usj.mastertsea.androidweatherapp.domain.model.HourlyWeather
 import es.usj.mastertsea.androidweatherapp.domain.model.WeatherDay
 import java.text.SimpleDateFormat
 import java.util.Calendar
-import java.util.Date
 import java.util.Locale
 
 
