@@ -1,7 +1,6 @@
 package es.usj.mastertsea.androidweatherapp.domain.model
 
 import com.google.gson.annotations.SerializedName
-import com.google.gson.Gson
 
 data class WeatherInfo(
     @SerializedName("cities") val cities: List<City>
@@ -21,7 +20,11 @@ data class Location(
 data class WeatherDay(
     @SerializedName("day") val day: String,
     @SerializedName("hourly") val hourly: List<HourlyWeather>
-)
+){
+
+    val max: Int? = hourly.maxOfOrNull { it.temperature }
+    val min: Int? = hourly.minOfOrNull { it.temperature }
+}
 
 data class HourlyWeather(
     @SerializedName("hour") val hour: String,
@@ -30,7 +33,3 @@ data class HourlyWeather(
     @SerializedName("humidity") val humidity: Int,
     @SerializedName("wind_speed") val windSpeed: Int
 )
-
-fun parseWeather(jsonString: String): WeatherInfo {
-    return Gson().fromJson(jsonString, WeatherInfo::class.java)
-}
