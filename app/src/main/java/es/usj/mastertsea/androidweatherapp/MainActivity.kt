@@ -2,7 +2,7 @@ package es.usj.mastertsea.androidweatherapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.add
+//import androidx.fragment.app.add
 import es.usj.mastertsea.androidweatherapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

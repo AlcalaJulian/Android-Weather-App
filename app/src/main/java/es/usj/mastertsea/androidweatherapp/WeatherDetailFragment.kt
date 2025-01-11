@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -20,7 +21,6 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-
 class WeatherDetailFragment : Fragment() {
     private val viewModel: WeatherViewModel by activityViewModels()
     private lateinit var recyclerView: RecyclerView
@@ -31,12 +31,12 @@ class WeatherDetailFragment : Fragment() {
     private lateinit var adapterHourly: HourlyWeatherAdapter
     private lateinit var adapterDay: DayWeatherAdapter
 
+    private lateinit var imgTap: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_weather_detail, container, false)
     }
 
@@ -50,7 +50,8 @@ class WeatherDetailFragment : Fragment() {
         recyclerView.adapter = adapter
 
         recyclerViewHours = view.findViewById(R.id.recyclerViewHours)
-        recyclerViewHours.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        recyclerViewHours.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
         adapterHourly = HourlyWeatherAdapter { hourlyWeather -> onClickHour(hourlyWeather) }
         recyclerViewHours.adapter = adapterHourly
@@ -74,32 +75,57 @@ class WeatherDetailFragment : Fragment() {
             }
         }
 
+        imgTap = view.findViewById(R.id.imgTap)
+        imgTap.setOnClickListener {
+            handleImageTapAction()
+        }
+    }
+    private fun handleImageTapAction() {
+        imgTap.alpha = 0.5f
+        imgTap.postDelayed({
+            imgTap.alpha = 1.0f
+        }, 200)
+
+        val cityName = viewModel.selectedWeather.value?.city ?: "Ciudad Desconocida"
+        val locationCoordinatesLatitude = viewModel.selectedWeather.value?.location?.latitude?.toString() ?: ""
+        val locationCoordinatesLongitude = viewModel.selectedWeather.value?.location?.longitude?.toString() ?: ""
+        val condition = viewModel.selectedWeather.value?.weather?.first()?.hourly?.first()?.condition ?: ""
+
+        val mapFragment = FragmentMapContainer.newInstance(cityName, locationCoordinatesLatitude, locationCoordinatesLongitude, condition)
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainerView, mapFragment)
+            .addToBackStack(null)
+            .commit()
     }
 
-    private fun onClickHour(hourlyWeather: HourlyWeather){
-        Toast.makeText(this.context, "Temperature: ${hourlyWeather.temperature}, Humity: ${hourlyWeather.humidity}", Toast.LENGTH_SHORT).show()
+
+
+
+    private fun onClickHour(hourlyWeather: HourlyWeather) {
+        Toast.makeText(
+            this.context,
+            "Temperature: ${hourlyWeather.temperature}, Humity: ${hourlyWeather.humidity}",
+            Toast.LENGTH_SHORT
+        ).show()
     }
 
-    private fun onClickDay(dayWeather: WeatherDay){
-        Toast.makeText(this.context, "Day: ${dayWeather.day}, Max: ${dayWeather.max}", Toast.LENGTH_SHORT).show()
+    private fun onClickDay(dayWeather: WeatherDay) {
+        Toast.makeText(
+            this.context,
+            "Day: ${dayWeather.day}, Max: ${dayWeather.max}",
+            Toast.LENGTH_SHORT
+        ).show()
     }
 
     private fun convertStringToDateAndGetDayOfWeek(dateString: String, format: String): String {
-        // Create a SimpleDateFormat object with the appropriate format
         val simpleDateFormat = SimpleDateFormat(format, Locale.getDefault())
-
-        // Convert the String to a Date
         val date = simpleDateFormat.parse(dateString)
-
-        // Get the day of the week (1 = Sunday, 2 = Monday, ..., 7 = Saturday)
         val calendar = Calendar.getInstance()
         if (date != null) {
             calendar.time = date
         }
-
-        // Extract the day of the week in textual form (e.g., Monday, Tuesday, ...)
         val dayOfWeek = calendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.getDefault())
-
         return dayOfWeek ?: "Unknown"
     }
 }

@@ -103,4 +103,14 @@
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
+    <ImageView
+        android:id="@+id/imgTap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_map"
+        android:clickable="true"
+        android:focusable="true" />
+
 </LinearLayout>

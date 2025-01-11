@@ -7,4 +7,6 @@
     <string name="max_min">Max.: 31, Min.: 49</string>
     <string name="desc_condition_hour">Img condition hour</string>
     <string name="other_days">Other days</string>
+    <string name="maps_api_key">AIzaSyAbVWXXmMDXQnlUsQvrRs902PbxCFH29b8</string>
+
 </resources>
