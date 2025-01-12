@@ -34,7 +34,7 @@ class WeatherCurrentAdapter(private val city: City) :
 
             fun bind(city: City) {
                 textCity.text = city.city
-                "Max: ${city.weather.first().hourly.maxOf { it.temperature }}°C - Min: ${city.weather.first().hourly.maxOf { it.temperature }}°C".also { textMax.text = it }
+                "Max: ${city.weather.first().hourly.maxOf { it.temperature }}°C - Min: ${city.weather.first().hourly.minOf { it.temperature }}°C".also { textMax.text = it }
                 textCondition.text = city.weather.first().hourly.first().condition
                 city.weather.first().hourly.first().temperature.toString()
                     .also { textTemperature.text = buildString {

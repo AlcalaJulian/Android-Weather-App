@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,11 +19,8 @@ class WeatherListFragment : Fragment() {
     private val viewModel: WeatherViewModel by activityViewModels()
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: WeatherAdapter
+    private lateinit var editTextSearch: EditText
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,7 +32,7 @@ class WeatherListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        editTextSearch = view.findViewById(R.id.editTextSearch)
         recyclerView = view.findViewById(R.id.recyclerViewCities)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         adapter = WeatherAdapter { city -> onCitySelected(city) }
@@ -43,9 +42,11 @@ class WeatherListFragment : Fragment() {
             adapter.submitList(cities)
         }
 
-        //if (viewModel.weatherList.value?.isEmpty() == true){
-            viewModel.loadData(this)
-        //}
+        viewModel.loadData(this)
+
+        editTextSearch.addTextChangedListener{ text ->
+            adapter.filter.filter(text)
+        }
     }
 
     private fun onCitySelected(city: City) {

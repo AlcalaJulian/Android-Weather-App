@@ -26,8 +26,8 @@ class DayWeatherAdapter(private val onClickHour: (WeatherDay) -> Unit) : ListAda
 
         fun bind(dayWeather: WeatherDay) {
             view.textDay.text = convertStringToDateAndGetDayOfWeek(dayWeather.day,"yyyy-MM-dd")
-            "${dayWeather.hourly.first().temperature}°C - ".also { view.textTemperatureStart.text = it }
-            "${dayWeather.hourly.last().temperature}°C".also { view.textTemperatureEnd.text = it }
+            "${dayWeather.hourly.maxOf{ it.temperature }}°C - ".also { view.textTemperatureStart.text = it }
+            "${dayWeather.hourly.maxOf { it.temperature}}°C".also { view.textTemperatureEnd.text = it }
 
 
     view.icon.setImageResource(getConditionIcon(dayWeather.hourly.first().condition))
