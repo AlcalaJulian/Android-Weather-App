@@ -33,7 +33,6 @@ class WeatherFragmentContainer : Fragment() {
             childFragmentManager.beginTransaction()
                 .replace(R.id.fragmentWeatherContainerView, WeatherListFragment())
                 .commit()
-            //viewModel.loadData(this)
         }
     }
 }

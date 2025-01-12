@@ -105,17 +105,17 @@ class WeatherDetailFragment : Fragment() {
     private fun onClickHour(hourlyWeather: HourlyWeather) {
         Toast.makeText(
             this.context,
-            "Temperature: ${hourlyWeather.temperature}, Humity: ${hourlyWeather.humidity}",
-            Toast.LENGTH_SHORT
+            "Temperature: ${hourlyWeather.temperature}, Humity: ${hourlyWeather.humidity}, Wind speed: ${hourlyWeather.windSpeed}",
+            Toast.LENGTH_LONG
         ).show()
     }
 
     private fun onClickDay(dayWeather: WeatherDay) {
-        Toast.makeText(
-            this.context,
-            "Day: ${dayWeather.day}, Max: ${dayWeather.max}",
-            Toast.LENGTH_SHORT
-        ).show()
+//        Toast.makeText(
+//            this.context,
+//            "Day: ${dayWeather.day}, Max: ${dayWeather.max}",
+//            Toast.LENGTH_LONG
+//        ).show()
     }
 
 }
