@@ -1,5 +1,6 @@
 package es.usj.mastertsea.androidweatherapp
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -99,9 +100,6 @@ class WeatherDetailFragment : Fragment() {
             .commit()
     }
 
-
-
-
     private fun onClickHour(hourlyWeather: HourlyWeather) {
         Toast.makeText(
             this.context,
@@ -111,11 +109,28 @@ class WeatherDetailFragment : Fragment() {
     }
 
     private fun onClickDay(dayWeather: WeatherDay) {
-//        Toast.makeText(
-//            this.context,
-//            "Day: ${dayWeather.day}, Max: ${dayWeather.max}",
-//            Toast.LENGTH_LONG
-//        ).show()
+        // Inflate the custom layout
+        val dialogView = LayoutInflater.from(this.context).inflate(R.layout.layout_dialog, null)
+
+        dialogView.findViewById<TextView>(R.id.textDateDialog).text = dayWeather.day
+        dialogView.findViewById<TextView>(R.id.textDayDialog).text = convertStringToDateAndGetDayOfWeek(dayWeather.day, "yyyy-MM-dd")
+
+
+        val recyclerViewHoursDialog = dialogView.findViewById<RecyclerView>(R.id.recyclerViewHoursDialog)
+        recyclerViewHoursDialog.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+
+        val adapterHourlyDialog = HourlyWeatherAdapter { hourlyWeather -> onClickHour(hourlyWeather) }
+        recyclerViewHoursDialog.adapter = adapterHourlyDialog
+        adapterHourlyDialog.submitList(dayWeather.hourly)
+
+        // Create the dialog builder
+        val dialogBuilder = AlertDialog.Builder(this.context)
+            .setView(dialogView)
+
+        // Create the AlertDialog
+        val dialog = dialogBuilder.create()
+        dialog.show()
     }
 
 }

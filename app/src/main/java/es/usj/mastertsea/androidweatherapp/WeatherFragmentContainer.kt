@@ -5,16 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import es.usj.mastertsea.androidweatherapp.data.WeatherViewModel
 
 class WeatherFragmentContainer : Fragment() {
 
-    //private val viewModel: WeatherViewModel by viewModels()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        viewModel.loadData(this)
     }
 
     override fun onCreateView(
