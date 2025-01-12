@@ -66,7 +66,7 @@ class WeatherDetailFragment : Fragment() {
             it.let {
                 val weather = it.weather.first()
                 adapterHourly.submitList(weather.hourly)
-                adapterDay.submitList(it.weather)
+                adapterDay.submitList(it.weather.filter {w -> w != weather})
 
                 val textDay: TextView = view.findViewById(R.id.textDay)
                 val textDate: TextView = view.findViewById(R.id.textDate)
@@ -118,14 +118,14 @@ class WeatherDetailFragment : Fragment() {
         ).show()
     }
 
-    private fun convertStringToDateAndGetDayOfWeek(dateString: String, format: String): String {
-        val simpleDateFormat = SimpleDateFormat(format, Locale.getDefault())
-        val date = simpleDateFormat.parse(dateString)
-        val calendar = Calendar.getInstance()
-        if (date != null) {
-            calendar.time = date
-        }
-        val dayOfWeek = calendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.getDefault())
-        return dayOfWeek ?: "Unknown"
+}
+fun convertStringToDateAndGetDayOfWeek(dateString: String, format: String): String {
+    val simpleDateFormat = SimpleDateFormat(format, Locale.getDefault())
+    val date = simpleDateFormat.parse(dateString)
+    val calendar = Calendar.getInstance()
+    if (date != null) {
+        calendar.time = date
     }
+    val dayOfWeek = calendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.getDefault())
+    return dayOfWeek ?: "Unknown"
 }

@@ -50,7 +50,6 @@ class WeatherListFragment : Fragment() {
 
     private fun onCitySelected(city: City) {
         viewModel.selectData(city.city)
-        // Navegar a WeatherFragment para mostrar los detalles del clima
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragmentContainerView, WeatherDetailFragment())
             .addToBackStack(null)

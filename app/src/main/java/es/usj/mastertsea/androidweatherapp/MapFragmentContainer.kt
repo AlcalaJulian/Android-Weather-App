@@ -66,7 +66,6 @@ class FragmentMapContainer : Fragment(), OnMapReadyCallback {
         val mapFragment = childFragmentManager.findFragmentById(R.id.mapFragment) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        // Configura el texto en el cuadro
         val textViewLocationInfo = view.findViewById<TextView>(R.id.textViewLocationInfo)
         textViewLocationInfo.text = "Ubicación: $cityName\nLatitud: $latitude\nLongitud: $longitude"
     }

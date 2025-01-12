@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import es.usj.mastertsea.androidweatherapp.R
+import es.usj.mastertsea.androidweatherapp.convertStringToDateAndGetDayOfWeek
 import es.usj.mastertsea.androidweatherapp.databinding.WeatherDayBinding
 import es.usj.mastertsea.androidweatherapp.domain.model.WeatherDay
 
@@ -24,7 +25,7 @@ class DayWeatherAdapter(private val onClickHour: (WeatherDay) -> Unit) : ListAda
     inner class DayWeatherViewHolder(private val view: WeatherDayBinding) : RecyclerView.ViewHolder(view.root) {
 
         fun bind(dayWeather: WeatherDay) {
-            view.textDay.text = dayWeather.day
+            view.textDay.text = convertStringToDateAndGetDayOfWeek(dayWeather.day,"yyyy-MM-dd")
             "${dayWeather.hourly.first().temperature}°C - ".also { view.textTemperatureStart.text = it }
             "${dayWeather.hourly.last().temperature}°C".also { view.textTemperatureEnd.text = it }
 
