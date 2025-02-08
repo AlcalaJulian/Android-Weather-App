@@ -188,10 +188,10 @@
       ]
     },
     {
-      "city": "Barcelona",
+      "city": "Zaragoza",
       "location": {
-        "latitude": 41.3784,
-        "longitude": 2.1925
+        "latitude": 41.6488,
+        "longitude": -0.8891
       },
       "weather": [
         {
@@ -199,87 +199,176 @@
           "hourly": [
             {
               "hour": "00:00",
-              "temperature": 17,
-              "condition": "Partly Cloudy",
-              "humidity": 60,
-              "wind_speed": 8
+              "temperature": 14,
+              "condition": "Clear",
+              "humidity": 35,
+              "wind_speed": 9
             },
             {
               "hour": "02:00",
-              "temperature": 16,
-              "condition": "Partly Cloudy",
-              "humidity": 62,
-              "wind_speed": 8
+              "temperature": 14,
+              "condition": "Clear",
+              "humidity": 36,
+              "wind_speed": 9
             },
             {
               "hour": "04:00",
-              "temperature": 16,
+              "temperature": 14,
               "condition": "Clear",
-              "humidity": 64,
-              "wind_speed": 8
+              "humidity": 37,
+              "wind_speed": 9
             },
             {
               "hour": "06:00",
-              "temperature": 17,
-              "condition": "Partly Cloudy",
-              "humidity": 65,
-              "wind_speed": 8
+              "temperature": 14,
+              "condition": "Clear",
+              "humidity": 38,
+              "wind_speed": 9
             },
             {
               "hour": "08:00",
-              "temperature": 18,
-              "condition": "Partly Cloudy",
-              "humidity": 66,
-              "wind_speed": 8
+              "temperature": 15,
+              "condition": "Sunny",
+              "humidity": 39,
+              "wind_speed": 9
             },
             {
               "hour": "10:00",
-              "temperature": 18,
+              "temperature": 16,
               "condition": "Sunny",
-              "humidity": 67,
-              "wind_speed": 8
+              "humidity": 40,
+              "wind_speed": 9
             },
             {
               "hour": "12:00",
-              "temperature": 19,
+              "temperature": 17,
               "condition": "Sunny",
-              "humidity": 68,
-              "wind_speed": 8
+              "humidity": 41,
+              "wind_speed": 9
             },
             {
               "hour": "14:00",
-              "temperature": 20,
+              "temperature": 18,
               "condition": "Sunny",
-              "humidity": 69,
-              "wind_speed": 8
+              "humidity": 42,
+              "wind_speed": 9
             },
             {
               "hour": "16:00",
-              "temperature": 20,
+              "temperature": 18,
               "condition": "Sunny",
-              "humidity": 70,
-              "wind_speed": 8
+              "humidity": 43,
+              "wind_speed": 9
             },
             {
               "hour": "18:00",
-              "temperature": 19,
+              "temperature": 18,
               "condition": "Sunny",
-              "humidity": 71,
-              "wind_speed": 8
+              "humidity": 44,
+              "wind_speed": 9
             },
             {
               "hour": "20:00",
-              "temperature": 18,
-              "condition": "Partly Cloudy",
-              "humidity": 72,
-              "wind_speed": 8
+              "temperature": 17,
+              "condition": "Clear",
+              "humidity": 45,
+              "wind_speed": 9
             },
             {
               "hour": "22:00",
-              "temperature": 17,
+              "temperature": 7,
               "condition": "Clear",
-              "humidity": 73,
-              "wind_speed": 8
+              "humidity": 46,
+              "wind_speed": 9
+            }
+          ]
+        },
+        {
+          "day": "2025-02-09",
+          "hourly": [
+            {
+              "hour": "00:00",
+              "temperature": 13,
+              "condition": "Clear",
+              "humidity": 37,
+              "wind_speed": 10
+            },
+            {
+              "hour": "02:00",
+              "temperature": 13,
+              "condition": "Clear",
+              "humidity": 38,
+              "wind_speed": 10
+            },
+            {
+              "hour": "04:00",
+              "temperature": 13,
+              "condition": "Clear",
+              "humidity": 39,
+              "wind_speed": 10
+            },
+            {
+              "hour": "06:00",
+              "temperature": 13,
+              "condition": "Clear",
+              "humidity": 40,
+              "wind_speed": 10
+            },
+            {
+              "hour": "08:00",
+              "temperature": 14,
+              "condition": "Sunny",
+              "humidity": 41,
+              "wind_speed": 10
+            },
+            {
+              "hour": "10:00",
+              "temperature": 15,
+              "condition": "Sunny",
+              "humidity": 42,
+              "wind_speed": 10
+            },
+            {
+              "hour": "12:00",
+              "temperature": 16,
+              "condition": "Sunny",
+              "humidity": 43,
+              "wind_speed": 10
+            },
+            {
+              "hour": "14:00",
+              "temperature": 17,
+              "condition": "Sunny",
+              "humidity": 44,
+              "wind_speed": 10
+            },
+            {
+              "hour": "16:00",
+              "temperature": 17,
+              "condition": "Sunny",
+              "humidity": 45,
+              "wind_speed": 10
+            },
+            {
+              "hour": "18:00",
+              "temperature": 16,
+              "condition": "Sunny",
+              "humidity": 46,
+              "wind_speed": 10
+            },
+            {
+              "hour": "20:00",
+              "temperature": 15,
+              "condition": "Clear",
+              "humidity": 47,
+              "wind_speed": 10
+            },
+            {
+              "hour": "22:00",
+              "temperature": 6,
+              "condition": "Clear",
+              "humidity": 48,
+              "wind_speed": 10
             }
           ]
         }
