@@ -9,6 +9,11 @@
     import androidx.recyclerview.widget.RecyclerView
     import es.usj.mastertsea.androidweatherapp.databinding.WeatherItemBinding
     import es.usj.mastertsea.androidweatherapp.domain.model.City
+    import es.usj.mastertsea.androidweatherapp.domain.util.WeatherUtil.Companion.getCurrentHour
+    import es.usj.mastertsea.androidweatherapp.domain.util.WeatherUtil.Companion.getCurrentWeather
+    import java.text.SimpleDateFormat
+    import java.util.Date
+    import java.util.Locale
 
     class WeatherAdapter (private val onCityClick: (City) -> Unit) :
         ListAdapter<City, WeatherAdapter.WeatherViewHolder>(CityDiffCallback()), Filterable {
@@ -28,11 +33,20 @@
 
                 fun bind(city: City) {
                     view.textItemCity.text = city.city
+
                     "Max: ${city.weather.first().hourly.maxOf { it.temperature }}° Min: ${city.weather.first().hourly.maxOf { it.temperature }}°".also { view.textItemMaxMin.text = it }
-                    city.weather.first().hourly.first().temperature.toString().also { view.textItemHour.text = it }
-                    view.textItemCondition.text = city.weather.first().hourly.first().condition
-                    view.textItemHour.text = city.weather.first().hourly.first().hour
-                    city.weather.first().hourly.first().temperature.toString()
+
+                    val now = Date()
+                    val format = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()) // Define the format
+                    val formattedDate = format.format(now) // Convert to string
+
+                    val currentWeather = getCurrentWeather(city.weather, formattedDate)
+                    val currentHour = getCurrentHour(currentWeather.hourly, formattedDate)
+
+                    currentHour.temperature.toString().also { view.textItemHour.text = it }
+                    view.textItemCondition.text = currentHour.condition
+                    view.textItemHour.text = currentHour.hour
+                    currentHour.temperature.toString()
                         .also { view.textItemTemperature.text = buildString {
                                     append(it)
                                     append("°")

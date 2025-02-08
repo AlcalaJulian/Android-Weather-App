@@ -10,6 +10,8 @@ import es.usj.mastertsea.androidweatherapp.R
 import es.usj.mastertsea.androidweatherapp.domain.model.City
 import es.usj.mastertsea.androidweatherapp.domain.model.HourlyWeather
 import es.usj.mastertsea.androidweatherapp.domain.model.WeatherDay
+import es.usj.mastertsea.androidweatherapp.domain.util.WeatherUtil.Companion.getCurrentHour
+import es.usj.mastertsea.androidweatherapp.domain.util.WeatherUtil.Companion.getCurrentWeather
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -58,16 +60,6 @@ class WeatherCurrentAdapter(private val city: City) :
                 img.setImageResource(getConditionIcon(textCondition.text as String))
             }
         }
-
-    private fun getCurrentWeather(weather: List<WeatherDay>, dateString: String): WeatherDay{
-
-        return weather.firstOrNull() { dateString.contains(it.day) } ?: weather.first()
-           // .hourly.first { formattedDate.contains(it.hour) }
-    }
-
-    private fun getCurrentHour(hours: List<HourlyWeather>, dateString: String): HourlyWeather{
-        return hours.firstOrNull { dateString.contains(it.hour) } ?: hours.first()
-    }
 }
 fun getConditionIcon(condition: String): Int {
     return when (condition.lowercase()) {
