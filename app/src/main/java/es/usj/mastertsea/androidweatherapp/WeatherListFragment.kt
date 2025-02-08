@@ -1,18 +1,20 @@
 package es.usj.mastertsea.androidweatherapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import androidx.core.widget.addTextChangedListener
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import es.usj.mastertsea.androidweatherapp.data.WeatherAdapter
 import es.usj.mastertsea.androidweatherapp.data.WeatherViewModel
+import es.usj.mastertsea.androidweatherapp.domain.location.LocationManager
 import es.usj.mastertsea.androidweatherapp.domain.model.City
+import es.usj.mastertsea.androidweatherapp.domain.model.Location
 
 class WeatherListFragment : Fragment() {
 
@@ -20,7 +22,6 @@ class WeatherListFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: WeatherAdapter
     private lateinit var editTextSearch: EditText
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,6 +40,22 @@ class WeatherListFragment : Fragment() {
         recyclerView.adapter = adapter
 
         viewModel.weatherList.observe(viewLifecycleOwner) { cities ->
+
+            try {
+
+                val locationManager = LocationManager(this.requireActivity())
+                val currentLocation = locationManager.getCurrentWeather()
+                val currentCity = cities.first()
+
+                currentCity.city = "Current location"
+                currentCity.location = Location(currentLocation.latitude, currentLocation.longitude)
+
+                cities.plus(currentCity)
+            }catch (ex: Exception){
+                print("Error al buscar el current location y agreagarlo a cities: ${ex.message}")
+            }
+
+
             adapter.submitList(cities)
         }
 
@@ -49,11 +66,15 @@ class WeatherListFragment : Fragment() {
         }
     }
 
-    private fun onCitySelected(city: City) {
-        viewModel.selectData(city.city)
+    private fun showMapFragment(){
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragmentContainerView, WeatherDetailFragment())
             .addToBackStack(null)
             .commit()
+    }
+
+    private fun onCitySelected(city: City) {
+        viewModel.selectData(city.city)
+        showMapFragment()
     }
 }

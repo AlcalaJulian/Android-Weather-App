@@ -8,6 +8,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import es.usj.mastertsea.androidweatherapp.R
 import es.usj.mastertsea.androidweatherapp.domain.model.City
+import es.usj.mastertsea.androidweatherapp.domain.model.HourlyWeather
+import es.usj.mastertsea.androidweatherapp.domain.model.WeatherDay
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class WeatherCurrentAdapter(private val city: City) :
     RecyclerView.Adapter<WeatherCurrentAdapter.WeatherViewHolder>() {
@@ -34,17 +39,35 @@ class WeatherCurrentAdapter(private val city: City) :
 
             fun bind(city: City) {
                 textCity.text = city.city
-                "Max: ${city.weather.first().hourly.maxOf { it.temperature }}°C - Min: ${city.weather.first().hourly.minOf { it.temperature }}°C".also { textMax.text = it }
-                textCondition.text = city.weather.first().hourly.first().condition
-                city.weather.first().hourly.first().temperature.toString()
+                val now = Date()
+                val format = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()) // Define the format
+                val formattedDate = format.format(now) // Convert to string
+
+                val currentWeather = getCurrentWeather(city.weather, formattedDate)
+                val currentHour = getCurrentHour(currentWeather.hourly, formattedDate)
+
+                "Max: ${currentWeather.hourly.maxOf { it.temperature }}°C - Min: ${currentWeather.hourly.minOf { it.temperature }}°C".also { textMax.text = it }
+
+                textCondition.text = currentHour.condition
+
+                currentHour.temperature.toString()
                     .also { textTemperature.text = buildString {
                         append(it)
                         append("°")
                     } }
                 img.setImageResource(getConditionIcon(textCondition.text as String))
             }
-
         }
+
+    private fun getCurrentWeather(weather: List<WeatherDay>, dateString: String): WeatherDay{
+
+        return weather.firstOrNull() { dateString.contains(it.day) } ?: weather.first()
+           // .hourly.first { formattedDate.contains(it.hour) }
+    }
+
+    private fun getCurrentHour(hours: List<HourlyWeather>, dateString: String): HourlyWeather{
+        return hours.firstOrNull { dateString.contains(it.hour) } ?: hours.first()
+    }
 }
 fun getConditionIcon(condition: String): Int {
     return when (condition.lowercase()) {

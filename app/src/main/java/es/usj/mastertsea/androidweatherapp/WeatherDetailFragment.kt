@@ -115,7 +115,6 @@ class WeatherDetailFragment : Fragment() {
         dialogView.findViewById<TextView>(R.id.textDateDialog).text = dayWeather.day
         dialogView.findViewById<TextView>(R.id.textDayDialog).text = convertStringToDateAndGetDayOfWeek(dayWeather.day, "yyyy-MM-dd")
 
-
         val recyclerViewHoursDialog = dialogView.findViewById<RecyclerView>(R.id.recyclerViewHoursDialog)
         recyclerViewHoursDialog.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)

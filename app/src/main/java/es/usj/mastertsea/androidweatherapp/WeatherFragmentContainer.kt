@@ -24,7 +24,6 @@ class WeatherFragmentContainer : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         if (savedInstanceState == null) {
-
             childFragmentManager.beginTransaction()
                 .replace(R.id.fragmentWeatherContainerView, WeatherListFragment())
                 .commit()
